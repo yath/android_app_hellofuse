@@ -3,6 +3,7 @@ How to build a fuse module:
 $ mkdir androidmodules
 $ cd androidmodules
 $ export NDK_MODULE_PATH=$(pwd)
+$ git clone git://github.com/yath/android_module_androidglue.git androidglue
 $ git clone git://github.com/yath/android_module_fuse.git fuse
 $ git clone git://github.com/yath/android_app_hellofuse.git hellofuse
 $ ndk-build -C hellofuse APP_BUILD_SCRIPT=Android.mk
